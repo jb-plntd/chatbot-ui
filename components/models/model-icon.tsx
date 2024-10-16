@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils"
 import mistral from "@/public/providers/mistral.png"
 import groq from "@/public/providers/groq.png"
+import plntd from "@/public/plntd_icon.png"
 import perplexity from "@/public/providers/perplexity.png"
 import { ModelProvider } from "@/types"
 import { IconSparkles } from "@tabler/icons-react"
@@ -28,12 +29,13 @@ export const ModelIcon: FC<ModelIconProps> = ({
   switch (provider as ModelProvider) {
     case "openai":
       return (
-        <OpenAISVG
+        <Image
           className={cn(
-            "rounded-sm bg-white p-1 text-black",
-            props.className,
+            "rounded-sm",
             theme === "dark" ? "bg-white" : "border-DEFAULT border-black"
           )}
+          src={plntd.src}
+          alt="PLNTD AI"
           width={width}
           height={height}
         />

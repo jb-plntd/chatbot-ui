@@ -2,7 +2,6 @@
 
 import Link from "next/link"
 import { FC } from "react"
-import { ChatbotUISVG } from "../icons/chatbotui-svg"
 
 interface BrandProps {
   theme?: "dark" | "light"
@@ -12,15 +11,50 @@ export const Brand: FC<BrandProps> = ({ theme = "dark" }) => {
   return (
     <Link
       className="flex cursor-pointer flex-col items-center hover:opacity-50"
-      href="https://www.chatbotui.com"
+      href="https://www.plntd.com.au"
       target="_blank"
       rel="noopener noreferrer"
     >
       <div className="mb-2">
-        <ChatbotUISVG theme={theme === "dark" ? "dark" : "light"} scale={0.3} />
+        <svg
+          className="h-auto w-40"
+          width="939"
+          height="316"
+          viewBox="0 0 939 316"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M787.5 137.6C790.7 134.6 794.1 131.8 797.7 129.4C794.1 131.7 790.7 134.5 787.5 137.6Z"
+            fill="#4FAD5A"
+          />
+          <path
+            d="M126.2 7H0V309.7H50.5V198H126.2C152.5 198 176.4 187.3 193.7 170C211 152.7 221.7 128.8 221.7 102.5C221.7 49.7 178.9 7 126.2 7ZM121.1 150.2H50.5V48H121.2C135.3 48 148.1 53.7 157.3 63C166.6 72.2 172.3 85 172.3 99.1C172.3 127.3 149.4 150.2 121.1 150.2Z"
+            fill="#4FAD5A"
+          />
+          <path
+            d="M478.6 85.2C469.1 81.6 458 79.7 445.6 79.7C404.8 79.7 386.1 104.6 379.1 117.7V85.2H331.4V309.6H379.1V172.6C383.2 144.6 400.8 120 428.6 120C460.7 120 478 144.4 478 170.2V309.6H525.7V179.6C525.7 128.7 510.1 97.1 478.6 85.2Z"
+            fill="#4FAD5A"
+          />
+          <path
+            d="M600.3 256.5V17.7H552.6V267.2C552.6 290.6 571.6 309.7 595.1 309.7H695.9V270.3H614.1C606.5 270.2 600.3 264.1 600.3 256.5Z"
+            fill="#4FAD5A"
+          />
+          <path d="M298.7 0H253.4V309.7H298.7V0Z" fill="#4FAD5A" />
+          <path
+            d="M893.3 0V116.6C874.9 94.2 849.1 80.2 820.5 80.2C764.8 80.2 719.7 132.8 719.7 197.7C719.7 262.6 764.8 315.2 820.5 315.2C849.2 315.2 875 301.2 893.3 278.8V309.5H938.6V0H893.3ZM829.5 272.9C820 272.9 811.1 270.3 803.1 265.7C805.4 266.8 807.6 267.9 810 268.7C807.5 267.8 805.1 266.7 802.8 265.5C781.4 253.1 766.5 226.4 766.5 195.3C766.5 172.4 774.6 151.9 787.4 137.7C787.4 137.7 787.4 137.6 787.5 137.6C787.5 137.6 787.5 137.6 787.4 137.7C798.6 125.3 813.3 117.7 829.5 117.7C864.3 117.7 892.5 152.4 892.5 195.3C892.5 238.2 864.3 272.9 829.5 272.9Z"
+            fill="#4FAD5A"
+          />
+          <path
+            d="M599.3 182.7C599.3 182.7 605.2 154.9 628.3 137C651.3 119.1 671.5 119.7 671.5 119.7C671.5 119.7 639.6 137.2 627.3 158.8C615 180.4 614.3 195.4 614.3 195.4C614.3 195.4 649.7 200.8 671.5 170.1C693.3 139.4 682.6 115.4 693.9 102C693.9 102 664.7 92.1 638.5 102C612.5 111.9 599.1 138.7 599.3 182.7Z"
+            fill="#4FAD5A"
+          />
+        </svg>
       </div>
 
-      <div className="text-4xl font-bold tracking-wide">Chatbot UI</div>
+      <div className="text-4xl font-bold tracking-tight text-green-600">
+        AI Oracle
+      </div>
     </Link>
   )
 }

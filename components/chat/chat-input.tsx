@@ -54,7 +54,8 @@ export const ChatInput: FC<ChatInputProps> = ({}) => {
     chatSettings,
     selectedTools,
     setSelectedTools,
-    assistantImages
+    assistantImages,
+    profile
   } = useContext(ChatbotUIContext)
 
   const {
@@ -165,7 +166,7 @@ export const ChatInput: FC<ChatInputProps> = ({}) => {
   return (
     <>
       <div className="flex flex-col flex-wrap justify-center gap-2">
-        <ChatFilesDisplay />
+        {/* <ChatFilesDisplay /> */}
 
         {selectedTools &&
           selectedTools.map((tool, index) => (
@@ -205,7 +206,7 @@ export const ChatInput: FC<ChatInputProps> = ({}) => {
             )}
 
             <div className="text-sm font-bold">
-              Talking to {selectedAssistant.name}
+              Talking to {selectedAssistant.name} & {profile?.display_name}
             </div>
           </div>
         )}
