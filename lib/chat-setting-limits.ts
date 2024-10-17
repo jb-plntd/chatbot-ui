@@ -165,82 +165,46 @@ export const CHAT_SETTING_LIMITS: Record<LLMID, ChatSettingLimits> = {
   },
 
   // PERPLEXITY MODELS
-  "pplx-7b-online": {
+  "llama-3.1-sonar-small-128k-online": {
     MIN_TEMPERATURE: 0.0,
     MAX_TEMPERATURE: 1.99,
-    MAX_TOKEN_OUTPUT_LENGTH: 4096,
-    MAX_CONTEXT_LENGTH: 4096
+    MAX_TOKEN_OUTPUT_LENGTH: 16384,
+    MAX_CONTEXT_LENGTH: 127072
   },
-  "pplx-70b-online": {
+  "llama-3.1-sonar-large-128k-online": {
     MIN_TEMPERATURE: 0.0,
     MAX_TEMPERATURE: 1.99,
-    MAX_TOKEN_OUTPUT_LENGTH: 4096,
-    MAX_CONTEXT_LENGTH: 4096
+    MAX_TOKEN_OUTPUT_LENGTH: 16384,
+    MAX_CONTEXT_LENGTH: 127072
   },
-  "pplx-7b-chat": {
+  "llama-3.1-sonar-huge-128k-online": {
     MIN_TEMPERATURE: 0.0,
-    MAX_TEMPERATURE: 1.0,
-    MAX_TOKEN_OUTPUT_LENGTH: 4096,
-    MAX_CONTEXT_LENGTH: 8192
+    MAX_TEMPERATURE: 1.99,
+    MAX_TOKEN_OUTPUT_LENGTH: 16384,
+    MAX_CONTEXT_LENGTH: 127072
   },
-  "pplx-70b-chat": {
-    MIN_TEMPERATURE: 0.0,
-    MAX_TEMPERATURE: 1.0,
-    MAX_TOKEN_OUTPUT_LENGTH: 4096,
-    MAX_CONTEXT_LENGTH: 4096
-  },
-  "mixtral-8x7b-instruct": {
+  "llama-3.1-sonar-small-128k-chat": {
     MIN_TEMPERATURE: 0.0,
     MAX_TEMPERATURE: 1.0,
     MAX_TOKEN_OUTPUT_LENGTH: 16384,
-    MAX_CONTEXT_LENGTH: 16384
+    MAX_CONTEXT_LENGTH: 127072
   },
-  "mistral-7b-instruct": {
+  "llama-3.1-sonar-large-128k-chat": {
     MIN_TEMPERATURE: 0.0,
     MAX_TEMPERATURE: 1.0,
     MAX_TOKEN_OUTPUT_LENGTH: 16384,
-    MAX_CONTEXT_LENGTH: 16384
+    MAX_CONTEXT_LENGTH: 127072
   },
-  "llama-2-70b-chat": {
-    MIN_TEMPERATURE: 0.0,
-    MAX_TEMPERATURE: 2.0,
-    MAX_TOKEN_OUTPUT_LENGTH: 4096,
-    MAX_CONTEXT_LENGTH: 4096
-  },
-  "codellama-34b-instruct": {
-    MIN_TEMPERATURE: 0.0,
-    MAX_TEMPERATURE: 1.0,
-    MAX_TOKEN_OUTPUT_LENGTH: 4096,
-    MAX_CONTEXT_LENGTH: 16384
-  },
-  "codellama-70b-instruct": {
+  "llama-3.1-8b-instruct": {
     MIN_TEMPERATURE: 0.0,
     MAX_TEMPERATURE: 1.0,
     MAX_TOKEN_OUTPUT_LENGTH: 16384,
-    MAX_CONTEXT_LENGTH: 16384
+    MAX_CONTEXT_LENGTH: 131072
   },
-  "sonar-small-chat": {
+  "llama-3.1-70b-instruct": {
     MIN_TEMPERATURE: 0.0,
     MAX_TEMPERATURE: 1.0,
     MAX_TOKEN_OUTPUT_LENGTH: 16384,
-    MAX_CONTEXT_LENGTH: 16384
-  },
-  "sonar-small-online": {
-    MIN_TEMPERATURE: 0.0,
-    MAX_TEMPERATURE: 1.0,
-    MAX_TOKEN_OUTPUT_LENGTH: 12000,
-    MAX_CONTEXT_LENGTH: 12000
-  },
-  "sonar-medium-chat": {
-    MIN_TEMPERATURE: 0.0,
-    MAX_TEMPERATURE: 1.0,
-    MAX_TOKEN_OUTPUT_LENGTH: 16384,
-    MAX_CONTEXT_LENGTH: 16384
-  },
-  "sonar-medium-online": {
-    MIN_TEMPERATURE: 0.0,
-    MAX_TEMPERATURE: 1.0,
-    MAX_TOKEN_OUTPUT_LENGTH: 12000,
-    MAX_CONTEXT_LENGTH: 12000
+    MAX_CONTEXT_LENGTH: 131072
   }
 }
