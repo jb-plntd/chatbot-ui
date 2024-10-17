@@ -18,7 +18,7 @@ export default function HomePage() {
         className="mt-4 flex w-[200px] items-center justify-center rounded-md bg-blue-500 p-2 font-semibold"
         href="/login"
       >
-        Sign-in to Workspace
+        Sign-in
         <IconArrowRight className="ml-1" size={20} />
       </Link>
     </div>
