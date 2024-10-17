@@ -1,88 +1,89 @@
 import { LLM } from "@/types"
 
-const PERPLEXITY_PLATORM_LINK =
+const PERPLEXITY_PLATFORM_LINK =
   "https://docs.perplexity.ai/docs/getting-started"
 
-// Perplexity Models (UPDATED 2/25/24) -----------------------------
+// Perplexity Models (UPDATED 10/17/24) -----------------------------
 // Model Deprecation Notice
-// Please note that on March 15, the pplx-70b-chat, pplx-70b-online, llama-2-70b-chat, and codellama-34b-instruct models will no longer be available through the Perplexity API.
+// Please note that the following models have been deprecated:
+// pplx-70b-chat, pplx-70b-online, llama-2-70b-chat, codellama-34b-instruct.
 
-// Mixtral 8x7B Instruct (UPDATED 1/31/24)
-const MIXTRAL_8X7B_INSTRUCT: LLM = {
-  modelId: "mixtral-8x7b-instruct",
-  modelName: "Mixtral 8x7B Instruct",
+// Llama 3.1 Sonar Small Online
+const LLAMA_3_1_SONAR_SMALL_128K_ONLINE: LLM = {
+  modelId: "llama-3.1-sonar-small-128k-online",
+  modelName: "Llama 3.1 Sonar Small 128K Online",
   provider: "perplexity",
-  hostedId: "mixtral-8x7b-instruct",
-  platformLink: PERPLEXITY_PLATORM_LINK,
+  hostedId: "llama-3.1-sonar-small-128k-online",
+  platformLink: PERPLEXITY_PLATFORM_LINK,
   imageInput: false
 }
 
-// Mistral 7B Instruct (UPDATED 1/31/24)
-const MISTRAL_7B_INSTRUCT: LLM = {
-  modelId: "mistral-7b-instruct",
-  modelName: "Mistral 7B Instruct",
+// Llama 3.1 Sonar Large Online
+const LLAMA_3_1_SONAR_LARGE_128K_ONLINE: LLM = {
+  modelId: "llama-3.1-sonar-large-128k-online",
+  modelName: "Llama 3.1 Sonar Large 128K Online",
   provider: "perplexity",
-  hostedId: "mistral-7b-instruct",
-  platformLink: PERPLEXITY_PLATORM_LINK,
+  hostedId: "llama-3.1-sonar-large-128k-online",
+  platformLink: PERPLEXITY_PLATFORM_LINK,
   imageInput: false
 }
 
-// CodeLlama 70B Instruct (UPDATED 1/31/24)
-const CODELLAMA_70B_INSTRUCT: LLM = {
-  modelId: "codellama-70b-instruct",
-  modelName: "CodeLlama 70B Instruct",
+// Llama 3.1 Sonar Huge Online
+const LLAMA_3_1_SONAR_HUGE_128K_ONLINE: LLM = {
+  modelId: "llama-3.1-sonar-huge-128k-online",
+  modelName: "Llama 3.1 Sonar Huge 128K Online",
   provider: "perplexity",
-  hostedId: "codellama-70b-instruct",
-  platformLink: PERPLEXITY_PLATORM_LINK,
+  hostedId: "llama-3.1-sonar-huge-128k-online",
+  platformLink: PERPLEXITY_PLATFORM_LINK,
   imageInput: false
 }
 
-// Sonar Small Chat (UPDATED 2/25/24)
-const PERPLEXITY_SONAR_SMALL_CHAT_7B: LLM = {
-  modelId: "sonar-small-chat",
-  modelName: "Sonar Small Chat",
+// Llama 3.1 Sonar Small Chat
+const LLAMA_3_1_SONAR_SMALL_128K_CHAT: LLM = {
+  modelId: "llama-3.1-sonar-small-128k-chat",
+  modelName: "Llama 3.1 Sonar Small 128K Chat",
   provider: "perplexity",
-  hostedId: "sonar-small-chat",
-  platformLink: PERPLEXITY_PLATORM_LINK,
+  hostedId: "llama-3.1-sonar-small-128k-chat",
+  platformLink: PERPLEXITY_PLATFORM_LINK,
   imageInput: false
 }
 
-// Sonar Small Online (UPDATED 2/25/24)
-const PERPLEXITY_SONAR_SMALL_ONLINE_7B: LLM = {
-  modelId: "sonar-small-online",
-  modelName: "Sonar Small Online",
+// Llama 3.1 Sonar Large Chat
+const LLAMA_3_1_SONAR_LARGE_128K_CHAT: LLM = {
+  modelId: "llama-3.1-sonar-large-128k-chat",
+  modelName: "Llama 3.1 Sonar Large 128K Chat",
   provider: "perplexity",
-  hostedId: "sonar-small-online",
-  platformLink: PERPLEXITY_PLATORM_LINK,
+  hostedId: "llama-3.1-sonar-large-128k-chat",
+  platformLink: PERPLEXITY_PLATFORM_LINK,
   imageInput: false
 }
 
-// Sonar Medium Chat (UPDATED 2/25/24)
-const PERPLEXITY_SONAR_MEDIUM_CHAT_8x7B: LLM = {
-  modelId: "sonar-medium-chat",
-  modelName: "Sonar Medium Chat",
+// Llama 3.1 8B Instruct
+const LLAMA_3_1_8B_INSTRUCT: LLM = {
+  modelId: "llama-3.1-8b-instruct",
+  modelName: "Llama 3.1 8B Instruct",
   provider: "perplexity",
-  hostedId: "sonar-medium-chat",
-  platformLink: PERPLEXITY_PLATORM_LINK,
+  hostedId: "llama-3.1-8b-instruct",
+  platformLink: PERPLEXITY_PLATFORM_LINK,
   imageInput: false
 }
 
-// Sonar Medium Online (UPDATED 2/25/24)
-const PERPLEXITY_SONAR_MEDIUM_ONLINE_8x7B: LLM = {
-  modelId: "sonar-medium-online",
-  modelName: "Sonar Medium Online",
+// Llama 3.1 70B Instruct
+const LLAMA_3_1_70B_INSTRUCT: LLM = {
+  modelId: "llama-3.1-70b-instruct",
+  modelName: "Llama 3.1 70B Instruct",
   provider: "perplexity",
-  hostedId: "sonar-medium-online",
-  platformLink: PERPLEXITY_PLATORM_LINK,
+  hostedId: "llama-3.1-70b-instruct",
+  platformLink: PERPLEXITY_PLATFORM_LINK,
   imageInput: false
 }
 
 export const PERPLEXITY_LLM_LIST: LLM[] = [
-  MIXTRAL_8X7B_INSTRUCT,
-  MISTRAL_7B_INSTRUCT,
-  CODELLAMA_70B_INSTRUCT,
-  PERPLEXITY_SONAR_SMALL_CHAT_7B,
-  PERPLEXITY_SONAR_SMALL_ONLINE_7B,
-  PERPLEXITY_SONAR_MEDIUM_CHAT_8x7B,
-  PERPLEXITY_SONAR_MEDIUM_ONLINE_8x7B
+  LLAMA_3_1_SONAR_SMALL_128K_ONLINE,
+  LLAMA_3_1_SONAR_LARGE_128K_ONLINE,
+  LLAMA_3_1_SONAR_HUGE_128K_ONLINE,
+  LLAMA_3_1_SONAR_SMALL_128K_CHAT,
+  LLAMA_3_1_SONAR_LARGE_128K_CHAT,
+  LLAMA_3_1_8B_INSTRUCT,
+  LLAMA_3_1_70B_INSTRUCT
 ]
